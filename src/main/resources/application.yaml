@@ -1,3 +1,11 @@
 spring:
   thymeleaf:
     cache: false
+
+server:
+  port: 8443
+  ssl:
+    # SSL config. for development (self-signed certificate)
+    key-store: classpath:mykeys.jks
+    key-store-password: password
+    key-password: password
